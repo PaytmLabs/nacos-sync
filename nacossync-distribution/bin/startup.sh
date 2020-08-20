@@ -78,8 +78,8 @@ usage(){
 
 start(){
 
-echo "$JAVA ${JAVA_OPT}" > ${BASE_DIR}/logs/nacossync_start.out 2>&1 &
-nohup $JAVA ${JAVA_OPT} >> ${BASE_DIR}/logs/nacossync_start.out 2>&1 &
+echo "$JAVA ${JAVA_OPT}" > ${BASE_DIR}/logs/nacossync_start.out 2>&1
+nohup $JAVA ${JAVA_OPT} >> ${BASE_DIR}/logs/nacossync_start.out 2>&1 
 echo "nacossync is starting，you can check the ${BASE_DIR}/logs/nacossync_start.out"
 
 }
